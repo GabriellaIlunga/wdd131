@@ -2,7 +2,7 @@ body{
     font-family: 'playfair Display',  serif;
     margin: 0;
     padding: 0;
-    background-color: #fffcf2;
+    background-color: #fffef0;
     color: #4a0e2e;
 }
 
@@ -11,14 +11,14 @@ header{
     color: #ad1457;
     padding: 20px 0;
     text-align: center;
-    border-bottom: 2px solid #db7093;
+
 }
 
 header span{
     display: block;
     font-weight: 700;
     font-style: italic;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #ad1457;
 }
 
@@ -27,8 +27,8 @@ nav{
     justify-content: center;
     gap: 20px;
     background-color: #ad1457;
-    padding: 12px;
-    gap: 40px;
+    padding: 10px;
+    gap: 20px;
 }
 
 nav a{
@@ -36,47 +36,45 @@ nav a{
     text-decoration: none;
     font-weight: bold;
     font-family: sans-serif;
-    transition: 0.3s;
+    padding: 5px 15px;
 }
 
 nav a:hover{
-    color: white;text-decoration: underline;
+    color: white;
     text-decoration: underline;
+    background-color: #ff69b4;
+    border-radius: 5px;
 }
 
 main{
-    max-width: 950px;
-    margin: 30px auto;
+    max-width: 840px;
+    margin: 20px auto;
     display: grid;
-    grid-template-columns: 2.5fr 1fr;
-    gap: 30px;
-    padding: 0 20px;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
 }
 
 main h1{
     grid-column: 1 / -1;
     text-align: center;
-    margin-bottom: 20px;
-    font-size: 2.5rem;
     color: #880e4f;
 }
 
 .card{
-    border: 1px solid #ddd;
-    border-radius: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
     background-color: white;
     overflow: hidden;
-    box-shadow: 0 4px 10px;
+    box-shadow: 2px 2px 8px;
     
 }
 
-.card h3{
+.card h2{
     background-color: #db7093;
     color: white;
     margin: 0;
-    padding: 15px;
+    padding: 12px;
     text-align: center;
-    font-size: 1.3rem;
 }
 
 .card p{
@@ -86,12 +84,14 @@ main h1{
 
 .profile-img{
     float: right;
-    width: 160px;
+    width: 150px;
     height: auto;
-    margin: 0 0 15px 15px;
-    border: 1px solid #db7093;
-    padding: 5px;
-    background-color: white;
+    margin: 15px;
+    border: 2px solid #db7093;
+}
+
+.card p, .card ul{
+    padding: 15px;
 }
 
 .location-section{
@@ -114,17 +114,15 @@ border-radius: 5px;
 }
 
 .flag-img{
-    display: block;
     width: 80px;
-    margin: 15px auto;
+    height: auto;
+    margin: 10px 0;
 }
 
 footer{
     text-align: center;
-    padding: 30px;
+    padding: 25px;
     background-color: #fdfd96;
-    color: #ad1457;
-    border-top: 4px solid #db7093;
-    margin-top: 50px;
+    border-top: 5px solid #db7093;
     color: #4a0e2e;
 }
