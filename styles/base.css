@@ -1,0 +1,130 @@
+body{
+    font-family: 'playfair Display',  serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffcf2;
+    color: #4a0e2e;
+}
+
+header{
+    background-color: #fdfd96;
+    color: #ad1457;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #db7093;
+}
+
+header span{
+    display: block;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2rem;
+    color: #ad1457;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #ad1457;
+    padding: 12px;
+    gap: 40px;
+}
+
+nav a{
+    color: #fdfd96;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: white;text-decoration: underline;
+    text-decoration: underline;
+}
+
+main{
+    max-width: 950px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+main h1{
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #880e4f;
+}
+
+.card{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 4px 10px;
+    
+}
+
+.card h3{
+    background-color: #db7093;
+    color: white;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.card p{
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.profile-img{
+    float: right;
+    width: 160px;
+    height: auto;
+    margin: 0 0 15px 15px;
+    border: 1px solid #db7093;
+    padding: 5px;
+    background-color: white;
+}
+
+.location-section{
+    clear: both;
+    padding: 20px;
+    background-color: #fffef0;
+    border-top: 0;
+}
+
+.location-section h4{
+    text-align: center;
+    color: #ad1457;
+    margin-top: 0;
+}
+
+.landscape-img{
+width: 100%;
+height: auto;
+border-radius: 5px;
+}
+
+.flag-img{
+    display: block;
+    width: 80px;
+    margin: 15px auto;
+}
+
+footer{
+    text-align: center;
+    padding: 30px;
+    background-color: #fdfd96;
+    color: #ad1457;
+    border-top: 4px solid #db7093;
+    margin-top: 50px;
+    color: #4a0e2e;
+}
