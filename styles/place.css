@@ -1,7 +1,6 @@
-/* --- Global Variables --- */
 :root {
-    --primary-green: #00A651; /* Swahili Green */
-    --accent-blue: #00ADEF;   /* Ocean Blue */
+    --primary-green: #00A651; 
+    --accent-blue: #00ADEF;   
     --white-overlay: rgba(255, 255, 255, 0.85);
     --text-color: #333;
 }
@@ -14,7 +13,7 @@ body {
     background-color: #f0f0f0;
 }
 
-/* --- Header & Footer --- */
+
 header, footer {
     background-color: var(--primary-green);
     color: white;
@@ -28,22 +27,26 @@ footer {
     margin-top: 0;
 }
 
-/* --- The Hero Container --- */
+footer p::after {
+    content: " 🌴"; 
+}
+
 main {
-    position: relative; /* Anchor for absolute cards */
+    position: relative; 
     width: 100%;
-    max-width: 100%;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
 }
 
 .hero-img {
     width: 100%;
-    height: 600px; /* Adjust height as needed */
+    height: 600px; 
     object-fit: cover;
     display: block;
 }
 
-/* --- Card Base Styling --- */
 .data, .weather {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.85);
@@ -53,7 +56,6 @@ main {
     z-index: 10;
 }
 
-/* Position the cards */
 .data {
     top: 20px;
     left: 20px;
@@ -64,7 +66,7 @@ main {
     right: 20px;
 }
 
-/* --- Card Headers --- */
+
 .data h2, .weather h2 {
     background-color: var(--primary-green);
     color: white;
@@ -75,18 +77,16 @@ main {
     font-size: 1.2rem;
 }
 
-/* --- Weather Icon Styling --- */
 .weather-icon {
     display: block;
-    margin: 10px auto; /* Centers the icon */
-    width: 60px;      /* Adjust size as needed */
+    margin: 10px auto; 
+    width: 60px;      
     height: auto;
 }
 
-/* --- Row Alignment (The Madagascar Look) --- */
 .data p, .weather p {
     display: flex;
-    justify-content: space-between; /* Labels left, Values right */
+    justify-content: space-between; 
     align-items: center;
     padding: 8px 15px;
     margin: 0;
@@ -94,17 +94,17 @@ main {
     font-size: 0.95rem;
 }
 
-/* Remove bottom border from last p tag in each card */
+
 .data p:last-child, .weather p:last-child {
     border-bottom: none;
 }
 
-/* Bold the Labels */
+
 .data p strong, .weather p strong {
     font-weight: 700;
 }
 
-/* --- Responsive View (Mobile) --- */
+
 @media (max-width: 800px) {
     .hero-img {
         height: auto;
@@ -112,7 +112,7 @@ main {
     }
     
     .data, .weather {
-        position: static; /* Stack cards vertically on mobile */
+        position: static; 
         width: 90%;
         margin: 20px auto;
     }
