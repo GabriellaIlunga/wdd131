@@ -3,120 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Fragrance Archive | Website Site Plan</title>
+    <title>The Fragrance Archive - Project Site Plan</title>
+    
+    <meta name="description" content="The Fragrance Archive is a professional site plan for a personal perfume collection and scent layering guide, designed for WDD131.">
+    <meta name="author" content="Gabriella Mujinga Ilunga">
+
+    <link rel="stylesheet" href="styles/siteplan.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #F4C2C2; 
-            --secondary-color: #90EE90; 
-            --accent-color: #D4AF37; 
-            --text-color: #333333;
-            --heading-font: 'Playfair Display', serif;
-            --body-font: 'Montserrat', sans-serif;
-        }
-
-        body {
-            font-family: var(--body-font);
-            line-height: 1.6;
-            color: var(--text-color);
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fffafb;
-        }
-
-        header {
-            text-align: center;
-            border-bottom: 3px solid var(--accent-color);
-            margin-bottom: 30px;
-        }
-
-        h1, h2, h3 {
-            font-family: var(--heading-font);
-            color: var(--accent-color);
-        }
-
-        h2 {
-            border-left: 10px solid var(--primary-color);
-            padding-left: 15px;
-            margin-top: 40px;
-        }
-
-        .color-box {
-            display: inline-block;
-            width: 100px;
-            height: 50px;
-            margin-right: 10px;
-            border: 1px solid #000;
-            vertical-align: middle;
-        }
-
-        .pink { background-color: var(--primary-color); }
-        .green { background-color: var(--secondary-color); }
-        .gold { background-color: var(--accent-color); }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border: 1px solid #ccc;
-            margin: 10px 0;
-        }
-
-        footer {
-            margin-top: 50px;
-            text-align: center;
-            font-size: 0.9em;
-            color: #777;
-        }
-    </style>
 </head>
 <body>
 
     <header>
         <h1>The Fragrance Archive</h1>
-        <p>Site Planning Document - WDD131</p>
+        <p>Site Planning Document - Gabriella Mujinga Ilunga</p>
     </header>
 
     <main>
-        <h2>Site Name</h2>
-        <p><strong>The Fragrance Archive</strong></p>
-        <p>I chose this name because it suggests a curated, organized, and high-end collection. It moves the focus from a simple list to an educational resource where scents are "archived" by their notes and characteristics.</p>
+        <section>
+            <h2>Site Name</h2>
+            <p><strong>The Fragrance Archive</strong></p>
+            <p>I chose this name because it suggests a curated, organized, and high-end collection. It moves the focus from a simple list to an educational resource where scents are archived by their notes and characteristics.</p>
+        </section>
 
-        <h2>Site Purpose</h2>
-        <p>The purpose of this site is to catalog a personal fragrance collection while educating enthusiasts on scent families and layering. It provides a digital inventory for the owner and a discovery tool for visitors to learn about different perfume profiles.</p>
+        <section>
+            <h2>Site Purpose</h2>
+            <p>The purpose of this site is to catalog a personal fragrance collection while educating enthusiasts on scent families and layering. It provides a digital inventory for the owner and a discovery tool for visitors to learn about different perfume profiles.</p>
+        </section>
 
-        <h2>Scenarios</h2>
-        <ul>
-            <li>"I am looking for a perfume with sandalwood notes for an evening event; what does this collection recommend?"</li>
-            <li>"How do I save my favorite scents from this archive so I can find them later?"</li>
-        </ul>
+        <section>
+            <h2>Scenarios</h2>
+            <ul>
+                <li>"I am looking for a perfume with sandalwood notes for an evening event; what does this collection recommend?"</li>
+                <li>"How do I save my favorite scents from this archive so I can find them later using localStorage?"</li>
+            </ul>
+        </section>
 
-        <h2>Color Schema</h2>
-        <p><span class="color-box pink"></span> <strong>Baby Pink (#F4C2C2):</strong> Used for secondary buttons and decorative background sections.</p>
-        <p><span class="color-box green"></span> <strong>Light Green (#90EE90):</strong> Used for 'Fresh' category highlights and success messages.</p>
-        <p><span class="color-box gold"></span> <strong>Gold (#D4AF37):</strong> Used for main headings, borders, and navigation hover states to convey luxury.</p>
+        <section>
+            <h2>Color Schema</h2>
+            <p><span class="color-box pink"></span> <strong>Baby Pink (#F4C2C2):</strong> Used for secondary buttons and decorative background sections.</p>
+            <p><span class="color-box green"></span> <strong>Light Green (#90EE90):</strong> Used for 'Fresh' category highlights and success messages.</p>
+            <p><span class="color-box gold"></span> <strong>Gold (#D4AF37):</strong> Used for main headings, borders, and navigation hover states to convey luxury.</p>
+        </section>
 
-        <h2>Typography</h2>
-        <h3>Playfair Display</h3>
-        <p>This serif font will be used for all <strong>headings (h1, h2, h3)</strong> to provide a sophisticated and professional look consistent with the fragrance industry.</p>
-        
-        <h3>Montserrat</h3>
-        <p>This sans-serif font will be used for <strong>body text, navigation items, and forms</strong> to ensure clean readability across all device sizes.</p>
+        <section>
+            <h2>Typography</h2>
+            <h3>Playfair Display</h3>
+            <p>This serif font will be used for all <strong>headings (h1, h2, h3)</strong> to provide a sophisticated and professional look consistent with the fragrance industry.</p>
+            
+            <h3>Montserrat</h3>
+            <p>This sans-serif font will be used for <strong>body text, navigation items, and forms</strong> to ensure clean readability across all device sizes.</p>
+        </section>
 
-        <h2>Wireframes</h2>
-        <h3>Mobile View</h3>
-        <p>[Insert your mobile wireframe image here or describe: A single-column layout with a toggle menu, centered logo, and vertically stacked perfume cards.]</p>
-        <img src="images/mobilewireframe.png" alt="Mobile wireframe mockup showing vertical layout">
+        <section>
+            <h2>Wireframes</h2>
+            <h3>Mobile View</h3>
+            <p>A single-column layout with a toggle menu, centered logo, and vertically stacked perfume cards.</p>
+            <img src="images/mobilewireframe.png" alt="Mobile wireframe mockup showing vertical layout" loading="lazy">
 
-        <h3>Desktop View</h3>
-        <p>[Insert your desktop wireframe image here or describe: A three-column grid layout with a horizontal navigation bar and a multi-column footer.]</p>
-        <img src="images/desktopwireframe.png" alt="Desktop wireframe mockup showing grid layout">
+            <h3>Desktop View</h3>
+            <p>A three-column grid layout with a horizontal navigation bar and a multi-column footer.</p>
+            <img src="images/desktopwireframe.png" alt="Desktop wireframe mockup showing grid layout" loading="lazy">
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 | The Fragrance Archive | Site Plan</p>
+        <p>&copy; 2026 | Gabriella Mujinga Ilunga | The Fragrance Archive | Site Plan</p>
     </footer>
 
 </body>
