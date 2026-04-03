@@ -1,4 +1,3 @@
-// Girly Product Array
 const products = [
   {
     id: "lp-2024",
