@@ -1,0 +1,151 @@
+:root {
+    --primary-color: #ffb6c1; 
+    --accent-color: #ffcc00;  
+    --text-color: #2c3e50;    
+    --bg-color: #fff9fb;      
+    --form-bg: #ffffff;
+    --footer-bg: #fce4ec;
+    --label-color: #d17a87;   
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #333;
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 8px solid var(--accent-color);
+}
+
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: var(--form-bg);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(255, 182, 193, 0.3);
+    border: 1px solid #ffe4e8;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    color: var(--label-color);
+    margin-bottom: 0.5rem;
+}
+
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #fce4ec;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+
+fieldset {
+    border: 2px solid #fce4ec;
+    padding: 1.2rem;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    color: var(--label-color);
+    padding: 0 0.5rem;
+}
+
+.rating-group {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.features-box label {
+    display: block;
+    font-weight: normal;
+    color: var(--text-color);
+    margin-bottom: 0.3rem;
+}
+
+
+.submit-btn {
+    background-color: var(--accent-color);
+    color: #333;
+    font-weight: bold;
+    padding: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 0 #e6b800;
+}
+
+.submit-btn:hover {
+    background-color: #ffd633;
+    transform: translateY(-2px);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+
+footer {
+    background-color: var(--footer-bg);
+    color: var(--label-color);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+.required {
+    color: #e91e63;
+    font-weight: bold;
+}
+
+
+.counter-box {
+    background-color: var(--accent-color);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    margin: 1.5rem 0;
+    font-weight: bold;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form | Gabriella Mujinga Ilunga</title>
+    
+    <meta name="description" content="This product review form was designed and developed by Gabriella Mujinga Ilunga for the W05 web development assignment. It features a dynamic product selection menu populated via JavaScript, a star-based rating system, and various input fields including dates and checkboxes to gather comprehensive user feedback on specific high-tech components and industrial products.">
+    
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+            <div class="form-section">
+                <label for="productName">Product Name <span class="required">*</span></label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                    </select>
+            </div>
+
+            <fieldset class="rating-box">
+                <legend>Overall Rating <span class="required">*</span></legend>
+                <div class="rating-group">
+                    <input type="radio" id="star1" name="rating" value="1" required>
+                    <label for="star1">1</label>
+                    
+                    <input type="radio" id="star2" name="rating" value="2" required>
+                    <label for="star2">2</label>
+                    
+                    <input type="radio" id="star3" name="rating" value="3" required>
+                    <label for="star3">3</label>
+                    
+                    <input type="radio" id="star4" name="rating" value="4" required>
+                    <label for="star4">4</label>
+                    
+                    <input type="radio" id="star5" name="rating" value="5" required>
+                    <label for="star5">5</label>
+                </div>
+            </fieldset>
+
+            <div class="form-section">
+                <label for="installDate">Date of Installation <span class="required">*</span></label>
+                <input type="date" id="installDate" name="installDate" required>
+            </div>
+
+            <fieldset class="features-box">
+                <legend>Which features did you find useful? (Check all that apply)</legend>
+                <label><input type="checkbox" name="features" value="durability"> Durability</label>
+                <label><input type="checkbox" name="features" value="design"> Design</label>
+                <label><input type="checkbox" name="features" value="performance"> Performance</label>
+                <label><input type="checkbox" name="features" value="ease-of-use"> Ease of Use</label>
+            </fieldset>
+
+            <div class="form-section">
+                <label for="review">Written Review (Optional)</label>
+                <textarea id="review" name="review" rows="4" placeholder="Share your experience with the product..."></textarea>
+            </div>
+
+            <div class="form-section">
+                <label for="userName">Your Name (Optional)</label>
+                <input type="text" id="userName" name="userName" placeholder="Enter your name">
+            </div>
+
+            <input type="submit" value="Post Review" class="submit-btn">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span>  | 🌸 Gabriella Ilunga 🌸 | Johannesburg, South Africa</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+        
+</body>
+</html>

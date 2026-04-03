@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation | Gabriella Mujinga Ilunga</title>
+    <meta name="description" content="Confirmation page for the product review submission. This page tracks the total number of reviews submitted by the user using local storage technology.">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Submission Received</h1>
+    </header>
+
+    <main>
+        <div class="confirmation-message">
+            <h2>Thank you for your feedback!</h2>
+            <p>Your product review has been successfully submitted. We appreciate your time in helping us improve our products.</p>
+            
+            <div class="counter-box">
+                <p>Total Reviews Completed: <span id="reviewDisplay">0</span></p>
+            </div>
+
+            <a href="form.html" class="submit-btn" style="text-decoration: none; display: inline-block; text-align: center;">Submit Another Review</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span>  | 🌸 Gabriella Ilunga 🌸 | Johannesburg, South Africa</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
