@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews | The Fragrance Archive</title>
+    <meta name="description" content="Submit reviews and scent suggestions for our boutique collection.">
+    <meta name="author" content="Gabriella Mujinga Ilunga">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>The Fragrance Archive</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="library.html">Collection</a></li>
+                <li><a href="matcher.html">Matcher</a></li>
+                <li><a href="feedback.html" class="active">Reviews</a></li>
+                <li id="cart-counter">Total: $0.00</li>
+                <li><button onclick="clearCart()" class="clear-btn">Reset</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Community Feedback</h2>
+            <p>We value your thoughts on our curated scents.</p>
+            
+            <form id="review-form">
+                <input type="text" id="user-name" placeholder="Your Name" required>
+                
+                <select id="product-select" required>
+                    <option value="" disabled selected>Select Fragrance / Category</option>
+                    <option value="General">General Feedback</option>
+                    <option value="Vanilla Baby">Vanilla Baby</option>
+                    <option value="Golden Glaze">Golden Glaze</option>
+                    <option value="Unicorn Fruit">Unicorn Fruit</option>
+                    <option value="Cherry Baby">Cherry Baby</option>
+                </select>
+
+                <select id="star-rating" required>
+                    <option value="" disabled selected>Your Rating</option>
+                    <option value="5">⭐⭐⭐⭐⭐ - Divine</option>
+                    <option value="4">⭐⭐⭐⭐ - Lovely</option>
+                    <option value="3">⭐⭐⭐ - Pleasant</option>
+                    <option value="2">⭐⭐ - Average</option>
+                    <option value="1">⭐ - Disappointing</option>
+                </select>
+
+                <textarea id="user-review" placeholder="Tell us about the longevity, sillage, or your general thoughts..." required></textarea>
+                
+                <button type="submit" class="cta-button">Post Review</button>
+            </form>
+        </section>
+
+        <section id="review-display-section">
+            <h3>Recent Experiences</h3>
+            <div id="reviews-list"></div>
+        </section>
+
+        <section class="contact-container">
+            <div class="contact-info">
+                <h3>Visit The Fragrance Archive</h3>
+                <p>123 Luxury Lane, Rosebank</p>
+                <p>Johannesburg, South Africa</p>
+                
+                <div class="contact-details">
+                    <p><strong>Email:</strong> <a href="mailto:info@fragrancearchive.co.za" class="contact-link">info@fragrancearchive.co.za</a></p>
+                    <p><strong>Cell:</strong> <a href="tel:+27111234567" class="contact-link">+27 11 123 4567</a></p>
+                </div>
+                
+                <div class="social-icons">
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="images/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="images/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://pinterest.com" target="_blank">
+                        <img src="images/pinterest.png" alt="Pinterest">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="flower-border">🌸 🌸 🌸 🌸 🌸</div>
+            <p>&copy; 2026 | Gabriella Mujinga Ilunga | Johannesburg</p>
+            <p><a href="references.html">References & Citations</a></p>
+            <p class="modification">Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

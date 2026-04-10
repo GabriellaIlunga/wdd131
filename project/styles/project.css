@@ -1,0 +1,322 @@
+:root {
+    --gold: #D4AF37;
+    --pink: #F4C2C2;
+    --dark: #2c2c2c;
+    --white: #ffffff;
+    --bg-light: #fffafb;
+    --shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    color: var(--dark);
+    background-color: var(--white);
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0 0 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a.active { color: var(--gold); font-weight: bold; }
+
+nav a:hover, nav a.active {
+    border-bottom: 2px solid var(--gold);
+    color: var(--gold);
+}
+
+#cart-counter {
+    background: var(--gold);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 25px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+#hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 5%;
+    background: var(--bg-light);
+    gap: 2rem;
+}
+
+.hero-text { text-align: left; max-width: 450px; }
+.hero-text h2 { font-family: 'Playfair Display', serif; font-size: 3.5rem; line-height: 1.1; margin-bottom: 1rem; }
+
+.cta-button, .add-btn {
+    display: inline-block;
+    background: var(--gold);
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+
+.cta-button:hover, .add-btn:hover { background: var(--dark); }
+
+.main-hero-img { width: 100%; max-width: 500px; height: auto; }
+
+#featured {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.featured-card {
+    max-width: 550px;
+    margin: 2rem auto;
+    padding: 40px;
+    background: var(--bg-light);
+    border: 1px solid var(--pink);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    padding: 4rem 2rem;
+}
+
+.perfume-card {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.perfume-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+.perfume-card img { max-width: 100%; height: auto; margin-bottom: 15px; }
+
+.price-tag { color: var(--gold); font-weight: bold; font-size: 1.2rem; }
+
+.scent-notes {
+    text-align: left;
+    font-size: 0.75rem;
+    background: #fff;
+    padding: 15px;
+    margin: 15px 0;
+    border-left: 3px solid var(--gold);
+}
+
+.usage-tags {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.usage-tags span {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    background: #fdf2f2;
+    padding: 5px 12px;
+    border-radius: 4px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 4rem auto;
+    padding: 3rem;
+    background: var(--bg-light);
+    box-shadow: var(--shadow);
+}
+
+form { display: flex; flex-direction: column; gap: 15px; text-align: left; }
+input, select, textarea { padding: 12px; border: 1px solid #ddd; font-family: inherit; }
+
+.review-card { border-bottom: 1px solid #eee; padding: 25px 0; text-align: left; }
+.review-card h4 { color: var(--gold); margin-bottom: 5px; }
+
+footer {
+    text-align: center;
+    padding: 4rem 1rem;
+    border-top: 1px solid #eee;
+}
+
+.payment-icons { font-size: 1.5rem; letter-spacing: 15px; margin: 10px 0 20px; }
+.flower-border { color: var(--pink); letter-spacing: 10px; margin-bottom: 1rem; }
+
+@media (max-width: 768px) {
+    .hero-text h2 { font-size: 2.5rem; }
+    #hero { text-align: center; }
+    .hero-text { text-align: center; }
+}
+
+.clear-btn {
+    background: transparent;
+    border: 1px solid var(--pink);
+    color: var(--dark);
+    padding: 3px 8px;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.clear-btn:hover {
+    background: var(--pink);
+    color: white;
+}
+
+.contact-container {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #fffafb; 
+    border-top: 1px solid #f0f0f0;
+    margin-top: 2rem;
+}
+
+.contact-info h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    color: #555;
+}
+
+.contact-details {
+    margin: 20px 0;
+}
+
+.contact-details a {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+.contact-container {
+    text-align: center;
+    padding: 4rem 1rem;
+    background-color: var(--bg-light);
+    border-top: 1px solid #f0f0f0;
+}
+
+.contact-info h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 1.5rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.social-icons img {
+    width: 35px; 
+    height: 35px;
+    object-fit: contain;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+    filter: sepia(1) saturate(5) hue-rotate(10deg); 
+}
+
+.contact-details {
+    margin: 20px 0;
+    line-height: 1.8;
+}
+
+.contact-details a {
+    color: var(--dark);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.contact-details a:hover {
+    color: var(--gold);
+    border-bottom: 1px solid var(--gold);
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px double var(--pink); 
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-bottom p {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #888; 
+    margin: 8px 0;
+}
+
+#lastModified {
+    color: var(--gold);
+    font-weight: bold;
+}
+
+.footer-bottom p:first-child {
+    color: var(--dark);
+    font-weight: 500;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

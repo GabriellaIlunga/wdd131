@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | The Fragrance Archive</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1>The Fragrance Archive</h1>
+       <nav>
+    <ul>
+        <li><a href="project.html">Home</a></li>
+        <li><a href="library.html">Collection</a></li>
+        <li><a href="matcher.html">Matcher</a></li>
+        <li><a href="feedback.html">Reviews</a></li>
+        <li id="cart-counter">Total: $0.00</li>
+        <li><button onclick="clearCart()" class="clear-btn">Reset</button></li>
+    </ul>
+</nav>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2 style="text-align: center; margin-bottom: 1.5rem;">Your Selection</h2>
+            
+            <div id="cart-items-list" style="margin-bottom: 2rem; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+                <p style="text-align: center; color: #777;">Review your luxury fragrance total below.</p>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                <h3 style="font-family: 'Montserrat'; font-size: 1rem; text-transform: uppercase;">Estimated Total:</h3>
+                <span id="cart-total-summary" style="font-size: 1.5rem; color: var(--gold); font-weight: bold;">$0.00</span>
+            </div>
+
+            <button class="cta-button" onclick="alert('Thank you for your order!')">Proceed to Checkout</button>
+            
+            <button onclick="clearCart()" style="background: none; border: none; color: #999; text-decoration: underline; cursor: pointer; width: 100%; margin-top: 20px; font-size: 0.8rem;">
+                Clear All Items
+            </button>
+        </div>
+        <section class="contact-container">
+    <div class="contact-info">
+        <h3>Visit The Fragrance Archive</h3>
+        <p>123 Luxury Lane, Rosebank</p>
+        <p>Johannesburg, South Africa</p>
+        
+        <p><strong>Email:</strong> <a href="mailto:info@fragrancearchive.co.za" class="contact-link">info@fragrancearchive.co.za</a></p>
+        <p><strong>Cell:</strong> <a href="tel:+27111234567" class="contact-link">+27 11 123 4567</a></p>
+        
+       <div class="social-icons">
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://pinterest.com" target="_blank">
+                <img src="images/pinterest.png" alt="Pinterest">
+            </a>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <footer>
+        <div class="payment-methods">
+            <div class="payment-icons">💳 📱 💰</div>
+            <p>Secure Payments via ZaraPay & DiorLink</p>
+            <p><a href="reference.html">References & Citations</a></p>
+        </div>
+        <p>&copy; <span id="year"></span> Gabriella Mujinga Ilunga</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/project.js"></script>
+    <script>
+        
+        function updateSummary() {
+            const savedTotal = localStorage.getItem('cartTotal') || "0.00";
+            const summary = document.getElementById('cart-total-summary');
+            if (summary) summary.textContent = `$${savedTotal}`;
+        }
+
+        function clearCart() {
+            localStorage.setItem('cartTotal', '0.00');
+            location.reload();
+        }
+
+        document.addEventListener("DOMContentLoaded", updateSummary);
+
+        
+    </script>
+</body>
+</html>
